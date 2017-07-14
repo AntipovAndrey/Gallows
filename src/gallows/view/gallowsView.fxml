@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="857.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gallows.controllers.GallowsController">
+   <children>
+      <Pane fx:id="keyBoardPane" layoutX="28.0" layoutY="404.0" prefHeight="176.0" prefWidth="802.0" />
+      <Pane fx:id="gameLetters" layoutX="16.0" layoutY="297.0" prefHeight="81.0" prefWidth="820.0" />
+      <ImageView fx:id="gallowsPicture" fitHeight="278.0" fitWidth="263.0" layoutX="174.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+      <PieChart fx:id="pieStat" layoutX="447.0" layoutY="19.0" prefHeight="278.0" prefWidth="389.0" />
+   </children>
+</AnchorPane>
