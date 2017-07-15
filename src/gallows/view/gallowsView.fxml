@@ -1,15 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.chart.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="857.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gallows.controllers.GallowsController">
-   <children>
-      <Pane fx:id="keyBoardPane" layoutX="28.0" layoutY="404.0" prefHeight="176.0" prefWidth="802.0" />
-      <Pane fx:id="gameLetters" layoutX="16.0" layoutY="297.0" prefHeight="81.0" prefWidth="820.0" />
-      <ImageView fx:id="gallowsPicture" fitHeight="278.0" fitWidth="263.0" layoutX="174.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
-      <PieChart fx:id="pieStat" layoutX="447.0" layoutY="19.0" prefHeight="278.0" prefWidth="389.0" />
-   </children>
+<AnchorPane fx:id="pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gallows.controllers.GallowsController">
+    <children>
+        <VBox alignment="CENTER" layoutX="24.5" layoutY="24.5" spacing="15.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <AnchorPane layoutX="25.0" layoutY="25.0" AnchorPane.bottomAnchor="291.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+                    <children>
+                        <GridPane layoutX="111.33332824707031" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+                                <ColumnConstraints hgrow="SOMETIMES" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <PieChart fx:id="pieStat" layoutX="418.0" prefHeight="278.0" prefWidth="389.0" AnchorPane.rightAnchor="0.0" GridPane.columnIndex="1" />
+                                <ImageView fx:id="gallowsPicture" fitHeight="278.0" fitWidth="263.0" layoutX="183.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="111.33332824707031" AnchorPane.rightAnchor="509.6666717529297" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                    <image>
+                                        <Image url="@../images/0.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="50.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                        </GridPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="25.0" layoutY="303.0" prefHeight="262.0" prefWidth="807.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+                    <children>
+                        <AnchorPane fx:id="gameLetters" layoutY="282.0" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <HBox fx:id="boxWithLetters" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="keyBoardPane" layoutY="90.0" prefHeight="176.0" prefWidth="802.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <children>
+                                <GridPane fx:id="keyboardTable" prefHeight="176.0" prefWidth="807.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+                                    <columnConstraints>
+
+                                    </columnConstraints>
+                                    <rowConstraints>
+
+                                    </rowConstraints>
+                                </GridPane>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </children>
 </AnchorPane>
